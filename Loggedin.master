@@ -1,0 +1,85 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Loggedin.master.cs" Inherits="Loggedin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <link href="StyleSheet.css" rel="stylesheet" />
+    <link rel="icon" href="~/Images/decent1.png" type="image/x-icon" />
+    <title>Decenturion Banking</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <%-- TOP DIVISION --%>
+    <div id="accountblock">
+        <div id="whitetop">
+            <div id="topLeft">
+                <a href="#"><img src="Images/dcnt.jpg" style="height: 60px; width: 70px;margin-left:30px;" /></a>
+            </div>
+            <div id="whitetopmid">
+                more give, less take
+            </div>
+            
+        </div> <%--whitetop --%>
+
+        <div id="redtop">
+            <div id="topRight" class="auto-style1">
+                <asp:Label ID="Label1" runat="server"></asp:Label> &nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:Button ID="Button1" runat="server" Text="Logout" BackColor="Black" Font-Bold="True" Font-Size="Large" ForeColor="White" Height="34px" Width="88px" OnClick="Button1_Click" />
+            </div>
+        </div> <%--Red Top --%>
+       
+        <div id="footer">
+            <asp:Menu ID="Menu1" runat="server" Font-Size="Large" ForeColor="White" Orientation="Horizontal" >
+                <Items>
+                    <asp:MenuItem Text="Account" Value="Account" NavigateUrl="~/Account.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="Bill Payment" Value="Bill Payment" NavigateUrl="~/Bpay.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="Funds Transfer" Value="Funds Transfer" NavigateUrl="~/Transfers.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="Apply/Offers" Value="Apply/Offers" NavigateUrl="~/Products.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="Settings" Value="Settings" NavigateUrl="~/Settings.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="Contact Us" Value="Contact Us" NavigateUrl="~/ContactUs.aspx"></asp:MenuItem>
+                </Items>
+                <StaticHoverStyle BackColor="Maroon" />
+                <StaticMenuItemStyle Font-Bold="True" Font-Size="X-Large" HorizontalPadding="48px" />
+                <StaticSelectedStyle BackColor="#CC3300" />
+            </asp:Menu>
+        </div> <%-- Ends footer div which is actually navbar--%> 
+    
+    </div> <%--accountblock --%>
+    
+        
+    <%--<div id="wrapper">--%>
+    <!--CONTENT PANE -->     
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+            <%-- This is where the other pages contents will go --%>
+        </asp:ContentPlaceHolder>
+    </div>
+
+    <%--</div>--%>
+
+
+    <!--Footer Division -->
+    <div id="footer">
+        <div id="bot_l">
+            &nbsp;&nbsp;&copy;Decenturion Bank Ltd    &nbsp;&nbsp;&nbsp;&nbsp;<a href="Aboutus.aspx">About Us</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:SiteMapPath ID="SiteMapPath1" runat="server">
+            </asp:SiteMapPath>
+        </div>
+        <div id="bot_r">
+            <img src="Images/face.png" height="40" />
+            <img src="Images/insta.jpg" height="40"/>
+            <img src="Images/twitter.png" height="40"/>
+            <img src="Images/whatsapp.png" height="40"/>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

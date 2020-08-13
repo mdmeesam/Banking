@@ -1,0 +1,60 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Kids.master.cs" Inherits="Kids" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <link href="StyleSheet.css" rel="stylesheet" />
+    <link rel="icon" href="~/Images/decent1.png" type="image/x-icon" />
+    <title>Decenturion Banking</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <%-- TOP DIVISION --%>
+    <div id="block">
+        <div id="top">
+        <div id="topLeft">
+            <a href="Home.aspx"><img src="Images/decent1.png" style="height: 60px; width: 70px" /></a>
+        </div>
+
+        <div id="topMid">
+            <a href="Home.aspx" style="color:white;"><h1 >Decenturion KiDS</h1></a>
+            &nbsp;<hr width="1" size="60" style="display:inline-block" />
+            <%-- https://stackoverflow.com/questions/3148415/how-to-make-a-vertical-line-in-html --%>
+        </div>
+
+      
+
+    </div> <%--top --%>
+    </div> <%--block --%>
+    
+        
+    <%--<div id="wrapper">--%>
+    <!--CONTENT PANE -->     
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+            <%-- This is where the other pages contents will go --%>
+        </asp:ContentPlaceHolder>
+    </div>
+
+    <%--</div>--%>
+    <!--Footer Division -->
+    <div id="footer">
+        <div id="bot_l">
+            &nbsp;&nbsp;&copy;Decenturion Bank Ltd &nbsp;&nbsp;&nbsp;&nbsp;<a href="Aboutus.aspx">About Us</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            
+        </div>
+        <div id="bot_r">
+            <img src="Images/face.png" height="40" />
+            <img src="Images/insta.jpg" height="40"/>
+            <img src="Images/twitter.png" height="40"/>
+            <img src="Images/whatsapp.png" height="40"/>
+        </div>
+        
+    </div>
+    </form>
+</body>
+</html>
+

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="" title="Decenturion Bank"  description="">
+    
+      <siteMapNode url="~/Home.aspx" title="Home"  description="Home">
+        <siteMapNode url="~/Account.aspx" title="Account"  description="Account" />
+        <siteMapNode url="~/Kids.aspx" title="Kids"  description="Kids" />
+        <siteMapNode url="~Login.aspx" title="Login"  description="Login" />
+
+        <siteMapNode url="~/Bpay.aspx" title="Bpay"  description="Bill payment" />
+        <siteMapNode url="~/Refistration.aspx" title="Registration"  description="Registration" />
+
+      </siteMapNode>
+  </siteMapNode>
+   
+</siteMap>

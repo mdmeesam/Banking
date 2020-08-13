@@ -1,0 +1,214 @@
+﻿body html, form /* for all,full page*/ {
+    margin: 0;
+    padding: 0;
+    color: #574c3f;
+    font-family: Corbel,Arial,Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background-color: lavender;
+    height: 605px;
+   
+}
+
+#block
+{
+    background-color:black;
+    width:100%;
+    position:relative;
+    /*height:60px;*/
+}
+#top {
+    /*background-color: black;
+    width: 100%;*/
+    /*position: relative;*/
+    height: 80px;           /*HEIGHT SHOULD BE 60PX*/
+    /*line-height:30px;*/
+    color: white;
+    /*text-align:center;*/
+    /*vertical-align:top;*/
+}
+
+#topLeft {
+    display: inline-block;
+    /*display:inline-flex;
+    align-items:center;*/
+    /*float:left;*/
+    /*height:60px;*/
+    /*vertical-align: top;*/
+}
+
+#topMid {
+    /*float: left;*/
+    /*display: inline-block;*/
+    display: inline-flex;
+    align-items: center;
+    /*height: 60px;*/
+    /*line-height:60px;*/
+    /*margin-top: -15px;*/
+    /*width: 310px;*/
+    /*text-align: left;*/
+    /*text-align:center;*/
+}
+
+h1 {
+    /*text-align:left;*/
+    display: inline-flex;
+    align-items: center;
+}
+
+#topRight {
+    float: right;
+    margin-top: 25px;
+    margin-right: 30px;
+    width: 264px;
+    /*line-height: 40px;*/
+    margin-left: 0px;
+    color:white;
+}
+
+#wrapper {
+    width: 100%;
+    margin: auto;
+    /*padding-bottom: 20px;*/
+    background-color: white;
+    /*border-radius: 25px;
+    overflow: hidden;
+    height: 700px;*/
+}
+
+#bot_l {
+    display: inline-block;
+    padding: 20px;
+    /*vertical-align:top;*/
+    /*line-height:50px;*/
+    margin-bottom:10px;
+}
+#bot_r {
+    float: right;
+    display: inline-block;
+}
+#footer {
+    width: 100%;
+    background-color: black;
+    color: white;
+    /*position:relative;*/
+    height: 50px;
+    line-height: 50px; /* to align to center of division up and down*/
+}
+#NavMenu {
+    display: inline-flex;
+    align-items: center;
+    /*float:left;*/
+}
+
+.img-holder {
+    position: relative;
+    /*text-align:center;*/
+    display:inline-block;
+    width: 100%;
+    /* height:auto;*/
+    /*background: url('Images/Screenshot_2018-10-25%20Simple%20Online%20Banking%20With%20Built-In%20Budgeting%20Saving%20Tools.png') no-repeat fixed;*/
+    /*-webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;*/
+    /*background-size: contain;
+    background-repeat: no-repeat;*/
+}
+/*.img-holder .link
+{
+    position:absolute;
+    bottom:133px;
+    right:849px;
+    width: 119px;
+    height: 40px;
+}*/
+
+.Apply {
+    /*position: absolute;
+    bottom: 194px;
+    right: 932px;
+    width: 119px;
+    height: 40px;*/
+}
+#ApplyButton {
+    position: absolute;
+    right: 50%;
+    top: 50%;
+}
+
+#game
+{
+    /*margin:auto;*/
+    margin-left:300px;
+   width:100%;
+    position:center;
+}
+
+#whitetop{
+    height:20px;
+}
+#accountblock{
+    background-color:white;
+}
+#redtop{
+    background-color:darkred;
+    height:100px;
+}
+#whitetopmid{
+    display:inline-block;
+    vertical-align:top;
+}
+#left{
+    width:20%;
+    height:500px;
+    display:inline-block;
+    background-color:lightslategray;
+}
+#maincontent {
+    /*vertical-align: top;*/
+    width: 80%;
+    float:right;
+    display: inline-block;
+}
+#abtus {
+    width: 80%;
+    margin: auto;
+    position: absolute;
+    top: 150px;
+    margin-left: 60px;
+    font-family: "Arial";
+    font-size: large;
+    color:black;
+    /*margin-left:40px;
+   margin-right:40px;*/
+}
+#wrapperabt {
+    /*background-image: url('Images/money-gold-coins-finance.jpg');
+    height:auto;
+    width:100%;*/
+}
+/*.map {
+    width: 20%;
+    height: 500px;
+    display: inline-block;
+    margin-top:50px;
+    /*width: 400px;
+    height: 300px;
+    display: inline-block;*/
+}*/
+#maincontent1 {
+    /*vertical-align: top;*/
+    width: 70%;
+    float: right;
+    display: inline-block;
+}
+
+.container {
+    background-color: #999999;
+    width: 80%;
+    margin:auto;
+}
+#imagewrap {
+    text-align: center;
+    display:inline-block;
+    padding:10px;
+}

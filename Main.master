@@ -1,0 +1,78 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Main.master.cs" Inherits="Main" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <link href="StyleSheet.css" rel="stylesheet" />
+    <link rel="icon" href="~/Images/decent1.png" type="image/x-icon" />
+    <title>Decenturion Banking</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <%-- TOP DIVISION --%>
+    <div id="block">
+        <div id="top">
+        <div id="topLeft">
+            <a href="Home.aspx"><img src="Images/decent1.png" style="height: 60px; width: 70px" /></a>
+        </div>
+
+        <div id="topMid">
+            <a href="Home.aspx" style="color:white;"><h1 >Decenturion Bank</h1></a>
+            &nbsp;<p style="text-align:right;display:inline-block;">more <br />than <br /> money</p>
+            <hr width="1" size="60" style="display:inline-block" />
+            <%-- https://stackoverflow.com/questions/3148415/how-to-make-a-vertical-line-in-html --%>
+        </div>
+
+        <%--OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged"--%>         <%--Selected="True"--%>
+
+        <div id="topRight">
+            <asp:DropDownList ID="DropDownList1" runat="server" BorderColor="Maroon" BackColor="#999999" Font-Bold="True" Font-Size="Large" ForeColor="Black" >
+                <asp:ListItem>Internet Banking</asp:ListItem>
+                <asp:ListItem>DCNTrade</asp:ListItem>
+            </asp:DropDownList>&nbsp;&nbsp;
+            <asp:Button ID="LoginButton" runat="server" Text="Login" BackColor="#990000" BorderColor="Maroon" Font-Bold="True" Font-Size="Medium" ForeColor="White" OnClick="LoginButton_Click" />
+        </div>
+        
+        <div id="NavMenu">
+            <asp:Menu ID="Nav" runat="server" Font-Bold="False" Font-Size="X-Large" Orientation="Horizontal" ForeColor="White">
+                <Items>
+                    <asp:MenuItem Text="Banking" Value="Banking" NavigateUrl="~/Products.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="KiDS" Value="KiDS" NavigateUrl="~/Kids.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="Contact Us" Value="Contact Us" NavigateUrl="~/ContactUs.aspx"></asp:MenuItem>
+                </Items>
+            </asp:Menu>
+        </div>
+    </div> <%--top --%>
+    </div> <%--block --%>
+    
+        
+    <%--<div id="wrapper">--%>
+    <!--CONTENT PANE -->     
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+            <%-- This is where the other pages contents will go --%>
+        </asp:ContentPlaceHolder>
+    </div>
+
+    <%--</div>--%>
+    <!--Footer Division -->
+    <div id="footer">
+        <div id="bot_l">
+            &nbsp;&nbsp;&copy;Decenturion Bank Ltd &nbsp;&nbsp;&nbsp;&nbsp;<a href="Aboutus.aspx">About Us</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:SiteMapPath ID="SiteMapPath1" runat="server">
+            </asp:SiteMapPath>
+        </div>
+        <div id="bot_r">
+            <img src="Images/face.png" height="40" />
+            <img src="Images/insta.jpg" height="40"/>
+            <img src="Images/twitter.png" height="40"/>
+            <img src="Images/whatsapp.png" height="40"/>
+        </div>
+        
+    </div>
+    </form>
+</body>
+</html>
